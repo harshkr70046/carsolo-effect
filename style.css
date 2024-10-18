@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    animation: gallery 20s linear infinite;
+    /* display: grid;
+    place-items: center; */
+}
+/* .image-container{
+    width: 60vw;
+    height: 50rem;
+    border-radius: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    animation: gallery 20s linear infinite;
+} */
+@keyframes gallery {
+    0% {
+        /* Keep the initial background at 0% */
+        background-image:linear-gradient(to right top ,red, yellow);
+    }
+    20% {
+        background-image:linear-gradient(to right top ,rgb(40, 158, 52), rgb(0, 238, 255));
+    }
+    30% {
+        background-image: linear-gradient(to right top ,rgb(0, 255, 76), yellow);
+    }
+    50% {
+        background-image: linear-gradient(to right top ,red, yellow);
+    }
+    100% {
+        background-image:linear-gradient(to right top ,rgb(40, 158, 52), rgb(0, 238, 255));
+    }
+}
+
